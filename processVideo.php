@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-$mysqli = new mysqli('localhost', 'root', 'huaweiu8500', 'boombox') or die(mysqli_error($mysqli));
+$mysqli = new mysqli('localhost', 'root', '', 'boombox') or die(mysqli_error($mysqli));
 
 $id = 0;
 $name = '';
