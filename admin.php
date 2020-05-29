@@ -37,7 +37,7 @@ if(!isset($_SESSION['name'])){
    
    <?php
 
-    $mysqli = new mysqli('localhost', 'root', 'huaweiu8500', 'boombox') or die(mysqli_error($mysqli));  
+    $mysqli = new mysqli('localhost', 'root', '', 'boombox') or die(mysqli_error($mysqli));  
     $result = $mysqli->query("SELECT * FROM data") or die($mysqli->error);
     $resultVideo = $mysqli->query("SELECT * FROM videos") or die($mysqli->error);
     //pre_r($result->fetch_assoc());
