@@ -1,0 +1,66 @@
+body{
+    background:url(../img/login.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+h1{
+    font-family: 'Permanent Marker', cursive !important;
+}
+
+.form-control{
+    color: white !important;
+}
+
+.login-box{
+    max-width: 700px;
+    margin: 50px auto;
+}
+
+.login-box h2{
+    font-family: 'Permanent Marker', cursive !important;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.8em;
+}
+
+.login-left{
+    background-color: rgba(69, 25, 92, 0.8);
+    padding: 30px;
+    margin: 5vh auto;
+    border-radius: 10px;
+    color: white;
+    font-size: 1.2em;
+    
+    
+}
+
+.login-right{
+    background-color: rgba(165, 165, 165, 0.822);
+    padding: 30px;
+}
+
+.form-control{
+    background-color: transparent !important;
+}
+
+.btn-primary{
+    background-color: rgb(58, 110, 230);
+    border: 1px solid white;
+}
+
+
+
+a{
+    color: #fff !important;
+    margin-top: -200px !important;
+}
+
+h1{
+    color: #fff !important;
+    margin-top: 200px !important;
+    text-align: center;
+    text-transform: uppercase;
+}

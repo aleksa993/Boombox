@@ -1,0 +1,43 @@
+body{
+    /*background:url(../img/login.jpg) no-repeat center center fixed;*/
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.login-box{
+    max-width: 700px;
+    margin: 50px auto;
+}
+
+.login-left{
+    background-color: rgba(95, 95, 95, 0.548);
+    padding: 30px;
+    margin: 5vh auto;
+    border-radius: 10px;
+    
+}
+
+.login-right{
+    background-color: rgba(165, 165, 165, 0.822);
+    padding: 30px;
+}
+
+.form-control{
+    background-color: transparent !important;
+}
+
+
+
+a{
+    color: #fff !important;
+    margin-top: -200px !important;
+}
+
+h1{
+    color: #fff !important;
+    margin-top: 200px !important;
+    text-align: center;
+    text-transform: uppercase;
+}

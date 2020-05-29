@@ -1,0 +1,21 @@
+body{
+    background-color: rgba(238, 238, 238, 0.8);
+}
+.kard{
+    padding: 30px;
+    background-color: rgba(144, 144, 144, 0.452);
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.korisnici{
+    background-color: rgba(54, 116, 231, 0.424);
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.video{
+    background-color: rgba(151, 54, 231, 0.424);
+    padding: 30px;
+    border-radius: 20px;
+}

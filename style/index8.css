@@ -1,0 +1,594 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:500');
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #000;
+}
+
+.head h1{
+  font-size: 5em !important;
+}
+
+nav{
+    font-size: 1.4em !important;
+}
+
+.wrapper{
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    background-color: #000;
+    position:absolute;
+}
+
+/*
+a{
+    color: white !important;
+    padding: 5px !important;
+}
+
+a:hover{
+    color: slateblue !important;
+    border-left: 1px slateblue solid;
+    border-right: 1px slateblue solid;
+
+}
+
+a:active{
+    color: slateblue !important; 
+}
+*/
+
+nav a{
+    font-family: 'Oswald', sans-serif;
+    font-weight:500;
+    text-transform:uppercase;
+    text-decoration:none;
+    color:rgb(255, 255, 255) !important;
+    margin:0 15px;
+    font-size:1em;
+    letter-spacing:1px;
+    position:relative;
+    display:inline-block;
+  }
+  nav a:before{
+    content:'';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background:#dbbd10;
+    top:47%;
+    animation:out 0.2s cubic-bezier(1, 0, 0.58, 0.97) 1 both;
+  }
+  nav a:hover:before{
+    animation:in 0.2s cubic-bezier(1, 0, 0.58, 0.97) 1 both;
+  }
+
+  .btn-secondary{
+    background-color: slateblue !important;
+    color: black !important;
+  } 
+
+  h1{
+    font-family: 'Permanent Marker', cursive !important;
+    font-size: 3.5em !important;
+    font-weight: 900 !important;
+    position:relative !important;
+    z-index: 500 !important;
+    margin: 5px 0 0 0 !important;
+    color: #E0C568FF !important;
+    text-shadow: 2.5px 3px #000;
+  }
+
+  .top{
+    position: absolute;
+    top: 7vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Permanent Marker', cursive !important;
+    font-size: 3.5em !important;
+    font-weight: 900 !important;
+    color: rgb(255, 255, 255) !important;
+  }
+
+  .curved{
+    background-color: #B618FF;
+    text-align: center;
+  }
+
+  .curved p{
+    margin-top: 10px !important;
+    margin-bottom: 0 !important;
+    font-size: 1.1em;
+    text-shadow: 2px 2px #000;
+  }
+
+  .curved h1{
+    margin:0 !important;
+  }
+
+  .curved svg{
+    display: block;
+  }
+
+  .curved section{
+    width: 60%;
+    margin: 0 auto !important;
+    padding: 20px;
+  }
+
+  .curvedTop{
+    background-color: #B618FF;
+    height: 150px;
+  }
+
+
+
+  .block{
+    width: 60%;
+    height: auto;
+    margin: auto;
+    color: rgb(223, 223, 223);
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 1.7px;
+    font-size: 1.3em;
+    padding: 60px;
+    line-height: 40px;
+  }
+
+  .block h1{
+    margin-top: 150px !important;
+    padding: 0;
+    font-size: 4.5em !important;
+  }
+
+  .blok{
+    background-image: url(../img/b.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    margin: auto;
+    color: rgb(224, 224, 224);
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 1.7px;
+    font-size: 1.2em;
+    padding-bottom: 40px;
+  }
+
+  .blok h1{
+    font-size: 3.5em !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  
+  .blok section{
+      width: 60%;
+      margin: auto;
+  }
+
+  
+  .kontakt{
+    width: 100%;
+    margin: auto;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 1.7px;
+    font-size: 1.4em;
+    color: white;
+  }
+
+  .map-container-5{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+    }
+    .map-container-5 iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+    }
+
+    .futer{
+        font-family: 'Oswald', sans-serif;
+        color: white;
+        font-size: 1.2em;
+    }
+    .futer a{
+        color: white;
+    }
+
+    .mobShow{
+        display: none;
+    }
+
+
+  @media (min-width: 768px) {
+    .carousel-multi-item-2 .col-md-3 {
+    float: left;
+    width: 25%;
+    max-width: 100%; } }
+    
+    .carousel-multi-item-2 .card img {
+    border-radius: 2px; }
+
+  @keyframes in{
+    0%{
+      width: 0;
+      left:0;
+      right:auto;
+    }
+    100%{
+      left:0;
+      right:auto;
+      width: 100%;
+    }
+  }
+  @keyframes out{
+    0%{
+      width:100%;
+      left: auto;
+      right: 0;
+    }
+    100%{
+      width: 0;
+      left: auto;
+      right: 0;
+    }
+  }
+  @keyframes show{
+    0%{
+      opacity:0;
+      transform:translateY(-10px);
+    }
+    100%{
+      opacity:1;
+      transform:translateY(0);
+    }
+  }
+  
+  @media only screen and (max-width: 600px) and (min-width: 410px) {
+
+    .head img{
+      width: 150px !important;
+    }
+
+    .mob img{
+        display: none !important;
+    }
+
+    .mobShow{
+
+        display: block !important;
+        margin: 5px auto 0 auto !important;
+    }
+    
+
+    .navbar {
+        position: fixed !important;
+        top: 0% !important;
+        background-color: #000 !important;
+        width: 100% !important;
+        padding: 5px !important;
+        z-index: 500 !important;
+      }
+
+    .wrapper h1{
+        font-size: 3.5em !important;
+        line-break: strict !important;
+        display: inline !important;
+        white-space: nowrap !important;
+    }
+
+    .head h1{
+        display: block !important;
+        margin-top: 30px !important;
+        font-size: 3.1em !important;
+        text-align: center !important;
+    }
+
+    .head{
+        width: 94% !important;
+        margin: auto !important;
+        margin-top: 30px !important;
+    }
+
+    h1{
+        z-index: 1 !important;
+    }
+
+    .block{
+        width: 100% !important;
+    }
+
+    .block p{
+       padding-top: 40px !important;
+    }
+
+    .container h1{
+        font-size: 3.5em !important ;
+    }
+
+    .kontakt{
+        width: 100% !important;
+    }
+    .kontakt img{
+        width: 100% !important;
+    }
+    .kontakt h1{
+        font-size:3em !important ;
+    }
+
+    .kontakt p{
+        margin-top: 30px !important;
+    }
+
+   }
+
+
+
+   @media only screen and (max-width: 410px) and (min-width: 320px){
+
+    .navbar {
+        position: fixed !important;
+        top: 0% !important;
+        background-color: #000 !important;
+        width: 100% !important;
+        padding: 5px !important;
+        z-index: 500 !important;
+      }
+
+    .head{
+        width: 98% !important;
+        margin: auto !important;
+        margin-top: 35px !important;
+    }
+    .wrapper{
+        width: 100% !important;
+    }
+    .head img{
+        width: 160px !important;
+    }
+
+    .carousel{
+        width: fit-content !important;
+    }
+
+    .head h1{
+        display: none !important;
+    }
+
+    .mob img{
+        display: none !important;
+    }
+
+    .mobShow{
+        display: inline-block !important;
+        margin: 22px auto 0 auto !important;
+    }
+
+    .block{
+        width: 100% !important;
+    }
+
+    .block h1{
+        font-size: 3.5em !important;
+        z-index: 1 !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+
+    .container h1{
+        font-size: 3.5em !important;
+        z-index: 1 !important;
+    }
+
+    .kontakt h1{
+        font-size: 2.5em !important;
+        z-index: 1 !important;
+    }
+   
+    .kontakt img{
+        width: 100% !important;
+    }
+
+    .kontakt p{
+        padding-top: 30px !important;
+    }
+    
+    .block p{
+        padding-top: 5px !important;
+     }
+
+    .block{
+        padding: 10px !important;
+    }
+   }
+
+   @media only screen and (max-width: 320px){
+        .block h1{
+            font-size: 2.8em !important;
+        }
+
+        .kontakt h1{
+            font-size: 2.5em !important;
+        }
+
+        .container h1{
+            font-size: 3.2em !important;
+
+        }
+   }
+
+   @media only screen and (max-width: 775px) and (min-width: 680px){
+     .head img{
+        width: 180px !important;
+      }
+
+      .wrapper{
+          margin-top: 53px !important;
+      }
+  
+      .mob img{
+          display: inline !important;
+      }
+      
+  
+      .navbar {
+          position: fixed !important;
+          top: 0% !important;
+          background-color: #000 !important;
+          width: 100% !important;
+          padding: 5px !important;
+          z-index: 500 !important;
+          font-size: 0.9em !important;
+        }
+  
+      .wrapper h1{
+          font-size: 4.5em !important;
+          line-break: strict !important;
+          display: inline !important;
+          white-space: nowrap !important;
+      }
+  
+      .head h1{
+          display: block !important;
+          margin-top: 30px !important;
+          font-size: 4em !important;
+          text-align: center !important;
+      }
+  
+      .head{
+          width: 94% !important;
+          margin: auto !important;
+          margin-top: 30px !important;
+      }
+  
+      h1{
+          z-index: 1 !important;
+      }
+  
+      .block{
+          width: 100% !important;
+      }
+  
+      .block p{
+         padding-top: 40px !important;
+         font-size: 1.5em !important;
+      }
+  
+      .container h1{
+          font-size: 4.5em !important ;
+      }
+
+      .container{
+          padding: 0 !important;
+      }
+  
+      .kontakt{
+          width: 100% !important;
+      }
+      .kontakt img{
+          width: 50% !important;
+      }
+      .kontakt h1{
+          font-size:3.8em !important ;
+      }
+  
+      .kontakt p{
+          margin-top: 50px !important;
+          font-size: 1.2em !important;
+      }
+   }
+
+   @media only screen and (max-width: 1024px) and (min-width: 760px){
+    .head img{
+        width: 180px !important;
+      }
+
+      .wrapper{
+          margin-top: 53px !important;
+      }
+  
+      .mob img{
+          display: inline !important;
+      }
+      
+  
+      .navbar {
+          position: fixed !important;
+          top: 0% !important;
+          background-color: #000 !important;
+          width: 100% !important;
+          padding: 5px !important;
+          z-index: 500 !important;
+          font-size: 1.3em !important;
+        }
+  
+      .wrapper h1{
+          font-size: 4.5em !important;
+          line-break: strict !important;
+          display: inline !important;
+          white-space: nowrap !important;
+      }
+  
+      .head h1{
+          display: block !important;
+          margin-top: 30px !important;
+          font-size: 5.5em !important;
+          text-align: center !important;
+      }
+  
+      .head{
+          width: 94% !important;
+          margin: auto !important;
+          margin-top: 30px !important;
+      }
+  
+      h1{
+          z-index: 1 !important;
+      }
+  
+      .block{
+          width: 100% !important;
+      }
+  
+      .block p{
+         padding-top: 40px !important;
+         font-size: 1.5em !important;
+      }
+  
+      .container h1{
+          font-size: 4.5em !important ;
+      }
+
+      .container{
+          padding: 0 !important;
+      }
+  
+      .kontakt{
+          width: 100% !important;
+      }
+      .kontakt img{
+          width: 50% !important;
+      }
+      .kontakt h1{
+          font-size:3.8em !important ;
+      }
+  
+      .kontakt p{
+          margin-top: 50px !important;
+          font-size: 1.2em !important;
+      }
+   }
+
+   h1{
+     color: white !important;
+   }
